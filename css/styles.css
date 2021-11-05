@@ -64,9 +64,7 @@ body {
   padding-bottom: 24px; */
 	border-bottom: 1px solid #ececec;
 }
-.header-nav {
-	display: flex;
-}
+
 .header-logo {
 	margin-right: 92px;
 	font-family: "Raleway";
@@ -491,8 +489,10 @@ body {
 }
 
 /* --форма подписки-- */
+
 .footer-subscribe {
 	margin-top: 12px;
+	margin-left: auto;
 }
 .subscribe-caption {
 	font-weight: 700;
