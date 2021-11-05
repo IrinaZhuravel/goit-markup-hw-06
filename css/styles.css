@@ -766,6 +766,10 @@ body {
 	letter-spacing: 0.03em;
 	color: #757575;
 	margin-bottom: 30px;
+	transition: color var(--transition);
+}
+.modal-form-checkbox-label:focus {
+	border-color: var(--effects-color);
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
