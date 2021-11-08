@@ -424,6 +424,7 @@ body {
 }
 .feedback {
 	display: flex;
+	align-items: baseline;
 }
 .footer-item:not(:last-child) {
 	margin-right: 70px;
@@ -469,9 +470,6 @@ body {
 	color: var(--effects-color);
 }
 
-.subscribe {
-	margin-top: 12px;
-}
 .subscribe-title {
 	font-weight: 900;
 	font-size: 14px;
@@ -491,7 +489,6 @@ body {
 /* --форма подписки-- */
 
 .footer-subscribe {
-	margin-top: 12px;
 	margin-left: auto;
 }
 .subscribe-caption {
@@ -517,13 +514,10 @@ body {
 	display: inline-flex;
 	align-items: center;
 	text-align: center;
-	margin-top: 20px;
 	font-size: 16px;
 	line-height: 1.87;
 	letter-spacing: 0.06em;
 	padding: 10px 29px;
-	min-width: 200px;
-	height: 50px;
 	margin-left: 12px;
 	background-color: var(--effects-color);
 	color: var(--footer-text-color);
@@ -754,7 +748,8 @@ body {
 	width: 16px;
 	height: 16px;
 	margin-right: 8px;
-	border: 1px solid var(--secondary-title-color);
+	border: 2px solid var(--secondary-title-color);
+	border-radius: 3px;
 	cursor: pointer;
 }
 .modal-form-checkbox-label {
@@ -768,13 +763,16 @@ body {
 	margin-bottom: 30px;
 	transition: color var(--transition);
 }
-.modal-form-checkbox-label:focus {
+.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
 	border-color: var(--effects-color);
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
-	background-image: url(../images/icon-check.svg);
 	border-color: var(--effects-color);
+	background-image: url(../images/icon-checkbox.svg);
+	background-color: var(--effects-color);
+	background-position: center;
+	background-repeat: no-repeat;
 }
 .modal-form-btn {
 	align-self: center;
